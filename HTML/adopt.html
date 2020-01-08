@@ -1,0 +1,96 @@
+<!-- 
+    adopt.hmtml
+
+    main functional page of the website, here the user can enter the information needed to find the right pet for them to adopt
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Find a pet to adopt!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/adopt.css" />
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="login-container">
+            <p id="current-user"></p><button id="login-button">Login</button>
+        </div>
+        <h1 id="main-page-header">Find-A-Friend.fluff!</h1>
+        <nav id="nav">
+            <a href="./index.html">Home</a>
+            <a id="adopt-link" href="./adopt.html">Find a Pet</a>
+            <a href="./shelter.html">Find a Shelter</a>
+        </nav>
+        <div class="main-area">
+            <h4 id="button-description">Use a saved pet's ID, or enter your preferences to find the right pet for you!</h4>
+
+            <div id="choice-zone">
+                <div>
+                    <button id="pet-id-button">Use Saved Pet ID</button>
+                </div>
+
+                <div>OR</div>
+                <div>
+                    <input type="text" id="zip-code" maxlength="5" placeholder="ZIP Code">
+                    <select id="animal-select">
+                        <option value="">No Animal Preference</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="bird">Bird</option>
+                        <option value="reptile">Reptile</option>
+                        <option value="horse">Horse</option>
+                        <option value="barnyard">Barnyard Animal</option>
+                        <option value="smallfurry">Small Mammal</option>
+                    </select>
+                    <select id="pet-age">
+                        <option value="">No Age Preference</option>
+                        <option value="Baby">Baby</option>
+                        <option value="Young">Young</option>
+                        <option value="Adult">Adult</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                    <select id="pet-gender">
+                        <option value="">No Gender Preference</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+                <button id="pic-button">Find a Pet!</button>
+            </div>
+
+            <div id="animal-zone">
+                <div id="animal-pic-zone">
+                    <div id="pic-container"></div>
+                </div>
+                <div id="animal-description-zone">
+                    <div id="name-container"></div>
+                    <div id="age-container"></div>
+                    <div id="breed-container"></div>
+                    <div id="description-container"></div>
+                    <div id="contact-container"></div>
+                    <div id="id-container"></div>
+                    <div id="id-saved-container"></div>
+                    <div id="shelter-id-container"></div>
+                    <div id="shelter-saved-container"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Unobtrusive JS -->
+    <script src="../JS/adopt.js"></script>
+</body>
+
+</html>

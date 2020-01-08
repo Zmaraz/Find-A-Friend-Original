@@ -1,0 +1,66 @@
+<!-- 
+    index.html
+
+    serves as the home page of the website
+ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Find-A-Friend.Fluff Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/index.css" />
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="login-container">
+            <p id="current-user"></p><button id="login-button">Login</button>
+        </div>
+        <h1 id="main-page-header">Find-A-Friend.fluff!</h1>
+        <nav id="nav">
+            <a id="home-link" href="./index.html">Home</a>
+            <a href="./adopt.html">Find a Pet</a>
+            <a href="./shelter.html">Find a Shelter</a>
+        </nav>
+        <div class="main-area">
+            <h4 id="button-description">Finding a pet is easy! just enter your ZIP code and click the button to find an
+                adoptable pet near you!</h4>
+            <div id="choice-zone">
+                <div>
+                    <input type="text" id="zip-code" maxlength="5" placeholder="ZIP Code">
+                </div>
+                <button id="pic-button">Find a Pet!</button>
+            </div>
+
+
+            <div id="animal-zone">
+                <div id="animal-pic-zone">
+                    <div id="pic-container"></div>
+                </div>
+                <div id="animal-description-zone">
+                    <div id="name-container"></div>
+                    <div id="id-container"></div>
+                    <div id="description-container"></div>
+                    <div id="id-message-container"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Unobtrusive JS -->
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>

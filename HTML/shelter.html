@@ -1,0 +1,55 @@
+<!-- 
+    shelter.html
+
+    a page where users can look up shelters near them
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Find A Shelter Near You!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/shelter.css" />
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="login-container">
+            <p id="current-user"></p><button id="login-button">Login</button>
+        </div>
+        <h1 id="main-page-header">Find-A-Friend.fluff!</h1>
+        <nav id="nav">
+            <a href="./index.html">Home</a>
+            <a href="./adopt.html">Find a Pet</a>
+            <a id="shelter-link" href="./shelter.html">Find a Shelter</a>
+        </nav>
+        <div id="main-area">
+            <h4 id="button-description">Use a saved pet ID to see what other animals are at your saved pets shelter!
+                Or, enter your ZIP code to see what shelters are near you!</h4>
+            <div id="choice-zone">
+                <div>
+                    <button id="pet-id-button">Use Saved Pet ID</button>
+                    <div>OR</div>
+                    <input type="text" id="zip-code" maxlength="5" placeholder="ZIP Code">
+                </div>
+                <button id="shelter-button">Find a Shelter!</button>
+            </div>
+
+            <div id="table-container"></div>
+            <div id="id-message-container"></div>
+            <div id="pet-list-table-container"></div>
+        </div>
+    </div>
+
+    <!-- Unobtrusive JS -->
+    <script src="../JS/shelter.js"></script>
+</body>
+
+</html>

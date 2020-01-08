@@ -1,0 +1,78 @@
+/*
+    shelter.css
+
+    CSS file for the shelter page, all styles in this file are specific to the shelter page
+*/
+
+#button-description{
+    text-align: center;
+    margin-top: 1em;
+}
+
+#table-container{
+    display: flex;
+    justify-content: center;
+}
+#pet-list-table-container{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+
+table{
+    border: 2px solid black;
+    background-color: beige;
+    box-shadow: 10px 10px 26px -3px rgba(0,0,0,0.75);
+
+    margin-top: 1em;
+    
+}
+thead{
+    color: #DF744A;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+    border-left: 1px solid black;
+    padding: .5em;
+}
+td > button{
+    width: 100%;
+}
+
+table button:hover{
+    cursor: pointer;
+}
+
+#nav > #shelter-link {
+  
+    background: #DF744A;
+    padding-left: 10%;
+    padding-right:10%;
+    transition: all .3s ease;
+    color: black;
+    border: 1px solid black;
+}
+
+#id-saved-span{
+    border: 1px solid black;
+    padding: .5em;
+    background: yellow;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+#id-message-container{
+    display: flex;
+    justify-content: center;
+}
+
+#choice-zone{
+    margin-top: 1em;
+    margin-left: 1em;
+}

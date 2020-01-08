@@ -1,0 +1,69 @@
+/* 
+    main.css
+
+    the central css file, all html files will link to this script file first.
+    all styling in this file is mutual to every html file in the site.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+body{
+    font-family: 'Cinzel', serif;
+    background-color: #9eeee7de;
+    color: black;
+}
+button{
+    transition: all .3s ease;
+}
+button:hover{
+    background: rgba(179,220,237,1);
+}
+#main-page-header{
+    text-align: center;
+    font-weight: bold;
+    margin-right: 76px;
+}
+
+#login-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1em;
+}
+#login-button{
+    margin-left: 1em;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    background: beige;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+#nav > a {
+    background: rgba(179,220,237,1);
+    padding-left: 10%;
+    padding-right:10%;
+    transition: all .3s ease;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#nav > a:hover{
+    background: #DF744A;
+}
+
+#animal-description{
+    font-size: 130%;
+}
+
+#animal-contact > a{
+    font-weight: bold;
+    color: blue;
+}

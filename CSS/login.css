@@ -1,0 +1,47 @@
+/* 
+    login.css
+
+     CSS file for the login page, all styles in this file are specific to the login page
+*/
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    width: 20%;
+    align-self: center;
+    background-color: beige;
+    box-shadow: 10px 10px 26px -3px rgba(0,0,0,0.75);
+
+    margin-top: 3%;
+    border-radius: 18px;
+    border: 1px solid black;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#mainForm{
+    text-align: center;
+
+}
+
+span{
+    display: flex;
+    justify-content: space-between;
+}
+
+#registerButton{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#username-label{
+    padding-right: 3px;
+}
+
+#pass-label{
+    padding-right: 6px;
+}

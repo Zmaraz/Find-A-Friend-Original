@@ -1,0 +1,50 @@
+<!-- 
+    login.html
+
+    a page where users can log into their account on the  website
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../CSS/login.css" />
+
+</head>
+
+<body>
+    <fieldset>
+        <div>
+            <h1>Login Here</h1>
+            <br />
+        </div>
+        <br />
+        <div>
+            <span>
+                <label id="username-label">UserName:</label>
+                <input id="userName" class="formInput" size="15" type="text" />
+            </span>
+            <span>
+                <label id="pass-label">Password:</label>
+                <input id="pass" class="formInput" size="15" type="password" />
+            </span>
+        </div>
+        <br />
+        <div>
+            <!-- <h5 id="invalid-message" hidden>Invalid Credentials</h5> -->
+            <input id="registerButton" type="submit" value="Login" disabled />
+        </div>
+    </fieldset>
+
+    <!-- Unobtrusive JS -->
+    <script src="../JS/login.js"></script>
+</body>
+
+</html>
